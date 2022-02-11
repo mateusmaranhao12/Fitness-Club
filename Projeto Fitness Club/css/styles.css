@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* Estrutura */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-attachment: fixed;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: -webkit-gradient(linear, left top, right top, from(#c2c2c2), color-stop(35%, #797979), color-stop(67%, #191919), to(black));
+  background: linear-gradient(90deg, #c2c2c2 0%, #797979 35%, #191919 67%, black 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Navbar */
+nav {
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(35%, #250000), color-stop(67%, #5c0000), to(#6b0000));
+  background: linear-gradient(90deg, black 0%, #250000 35%, #5c0000 67%, #6b0000 100%);
+}
+
+nav .navbar-toggler-icon {
+  color: white;
+}
+
+nav .navbar-brand {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+nav .navbar-brand span {
+  color: #ff0800;
+  font-weight: bold;
+}
+
+nav .navbar-brand:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .navbar-nav {
+  margin-left: 30px;
+}
+
+nav .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
+}
+
+nav .navbar-nav .nav-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body.inicial nav a#inicial,
+body.tabela nav a#tabela {
+  color: red;
+  cursor: text;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* Seção Principal */
+.principal .texto-principal {
+  padding: 20px;
+}
+
+.principal .texto-principal h1 {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 90px;
+}
+
+/*Cartões*/
+.cartoes h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(35%, #250000), color-stop(67%, #5c0000), to(#6b0000));
+  background: linear-gradient(90deg, black 0%, #250000 35%, #5c0000 67%, #6b0000 100%);
+  padding: 30px;
+}
+
+.cartoes .card {
+  margin: 30px;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(35%, #250000), color-stop(67%, #5c0000), to(#6b0000));
+  background: linear-gradient(90deg, black 0%, #250000 35%, #5c0000 67%, #6b0000 100%);
+  padding: 30px;
+}
+
+footer h6 {
+  color: white;
+  font-weight: bold;
+}
+
+/* Tabela */
+.tabelas h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.tabelas .table {
+  background: white;
+}
+/*# sourceMappingURL=styles.css.map */
